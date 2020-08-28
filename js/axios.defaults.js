@@ -1,7 +1,10 @@
 //对ajax进行二次封装
 
 //配置请求的基本路径
-axios.defaults.baseURL = "http://localhost:8888"; 
+axios.defaults.baseURL = "http://127.0.0.1:8888"; 
+
+axios.defaults.withCredentials = true; //后台请求会带上cook
+
 //数据以表单的形式扔给服务器
 axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded';
 
